@@ -5,6 +5,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorAccent"
+    android:backgroundTint="@android:drawable/presence_invisible"
     tools:context="com.example.lg_pc.moblie_sw.call">
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView2"
+        android:layout_marginEnd="28dp"
+        android:background="@android:drawable/divider_horizontal_bright"
+        android:backgroundTint="@android:drawable/presence_invisible"
+        android:tint="@android:color/holo_red_dark"
+        app:srcCompat="@android:drawable/sym_action_call" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="98dp"
+        android:layout_marginStart="36dp"
+        android:adjustViewBounds="false"
+        android:background="@android:color/background_light"
+        android:backgroundTint="@android:color/background_light"
+        android:tint="?attr/actionModeSplitBackground"
+        app:srcCompat="@android:drawable/sym_action_call" />
 </RelativeLayout>
