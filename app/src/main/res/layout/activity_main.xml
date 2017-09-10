@@ -33,9 +33,9 @@
         android:id="@+id/imageButton4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="116dp"
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/call"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_below="@+id/imageView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp" />
 </RelativeLayout>
