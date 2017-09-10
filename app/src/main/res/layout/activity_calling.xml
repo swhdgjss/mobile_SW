@@ -8,14 +8,4 @@
     android:backgroundTint="@android:color/black"
     tools:context="com.example.lg_pc.moblie_sw.calling">
 
-    <ImageButton
-        android:id="@+id/imageButton"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="@drawable/ic_launcher_background"
-        android:tint="@android:color/black"
-        app:srcCompat="@drawable/iconmonstr-phone-6-240"
-        tools:layout_editor_absoluteX="67dp"
-        tools:layout_editor_absoluteY="277dp" />
-
 </android.support.constraint.ConstraintLayout>
