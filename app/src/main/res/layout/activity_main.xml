@@ -30,12 +30,23 @@
         android:layout_centerHorizontal="true" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@android:color/transparent"
         app:srcCompat="@drawable/call"
+        android:layout_marginTop="105dp"
         android:layout_below="@+id/imageView3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="64dp" />
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@android:color/transparent"
+        app:srcCompat="@drawable/gallery"
+        android:layout_below="@+id/call"
+        android:layout_centerHorizontal="true" />
+
 </RelativeLayout>
