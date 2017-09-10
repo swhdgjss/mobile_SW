@@ -4,18 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorAccent"
-    android:backgroundTint="@color/colorAccent"
+    android:background="@android:color/black"
+    android:backgroundTint="@android:color/black"
     tools:context="com.example.lg_pc.moblie_sw.calling">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="307dp"
-        android:layout_height="153dp"
-        android:fontFeatureSettings="@android:string/paste"
-        android:text="전화 왔습니다"
-        android:textColor="@android:color/background_light"
-        android:textSize="40sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="73dp" />
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_launcher_background"
+        android:tint="@android:color/black"
+        app:srcCompat="@drawable/iconmonstr-phone-6-240"
+        tools:layout_editor_absoluteX="67dp"
+        tools:layout_editor_absoluteY="277dp" />
+
 </android.support.constraint.ConstraintLayout>
