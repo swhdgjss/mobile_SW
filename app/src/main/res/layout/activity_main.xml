@@ -8,12 +8,13 @@
     tools:context="com.example.lg_pc.moblie_sw.MainActivity">
 
     <ImageButton
-        android:id="@+id/imageButton6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="201dp"
-        app:srcCompat="@drawable/call" />
+        android:id="@+id/imageButton3"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/circle"
+        android:backgroundTint="@color/colorPrimary"
+        app:srcCompat="@drawable/call"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
