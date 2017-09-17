@@ -24,17 +24,6 @@
         android:layout_marginBottom="155dp" />
 
     <ImageButton
-        android:id="@+id/answer"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="78dp"
-        android:layout_marginStart="30dp"
-        android:background="@android:color/transparent"
-        app:srcCompat="@drawable/answer" />
-
-    <ImageButton
         android:id="@+id/reject"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
