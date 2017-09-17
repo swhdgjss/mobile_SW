@@ -8,6 +8,7 @@
     android:backgroundTint="@android:drawable/presence_invisible"
     tools:context="com.example.lg_pc.moblie_sw.call">
 
+
     <TextView
         android:id="@+id/textView2"
         android:layout_width="236dp"
