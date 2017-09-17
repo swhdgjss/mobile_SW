@@ -13,6 +13,9 @@
         android:text="End"
         android:textSize="40sp"
         tools:layout_editor_absoluteX="147dp"
-        tools:layout_editor_absoluteY="172dp" />
+        tools:layout_editor_absoluteY="172dp"
+        android:layout_marginTop="152dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
