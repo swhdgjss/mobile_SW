@@ -543,7 +543,7 @@ class PlayRTCHandler(activity: PlayRTCActivity) : PlayRTCObserver() {
      * v2.2.10
      * @return int
      */
-    var cameraExposureCompensation: Int = lateinit
+    var cameraExposureCompensation: Int = 0 //지금 초기화..0으로 가능?
         get() = if (playRTC != null) {
             playRTC!!.cameraExposureCompensation
         } else 0
@@ -625,7 +625,7 @@ class PlayRTCHandler(activity: PlayRTCActivity) : PlayRTCObserver() {
      * @param peerUid String, 상대방 사용자의 아이디
      */
     override fun onReject(obj: PlayRTC?, peerId: String?, peerUid: String?) {
-        Utils.showToast(activity, "[$peerId] onReject....")
+        Utils.showToast(activity!!, "[$peerId] onReject....")
         activity!!.appnedLogMessage(">>[$peerId] onReject....")
     }
 
@@ -636,7 +636,7 @@ class PlayRTCHandler(activity: PlayRTCActivity) : PlayRTCObserver() {
      * @param peerUid String, 상대방 사용자의 아이디
      */
     override fun onAccept(obj: PlayRTC?, peerId: String?, peerUid: String?) {
-        Utils.showToast(activity, "[$peerId] onAccept....")
+        Utils.showToast(activity!!, "[$peerId] onAccept....")
         activity!!.appnedLogMessage(">>[$peerId] onAccept....")
     }
 
@@ -651,7 +651,7 @@ class PlayRTCHandler(activity: PlayRTCActivity) : PlayRTCObserver() {
      * @param data String, 상대방이 전달한 문자열
      */
     override fun onUserCommand(obj: PlayRTC?, peerId: String?, peerUid: String?, data: String?) {
-        Utils.showToast(activity, "[$peerId] onCommand....")
+        Utils.showToast(activity!!, "[$peerId] onCommand....")
         activity!!.appnedLogMessage(">>[$peerId] onCommand[$data]")
     }
 
@@ -742,10 +742,10 @@ class PlayRTCHandler(activity: PlayRTCActivity) : PlayRTCObserver() {
      */
     override fun onDisconnectChannel(obj: PlayRTC?, reason: String?) {
         if (reason == "disconnect") {
-            Utils.showToast(activity, "채널에서 퇴장하였습니다....")
+            Utils.showToast(activity!!, "채널에서 퇴장하였습니다....")
             activity!!.appnedLogMessage(">>PlayRTC 채널에서 퇴장하였습니다....")
         } else {
-            Utils.showToast(activity, "채널이 종료되었습니다....")
+            Utils.showToast(activity!!, "채널이 종료되었습니다....")
             activity!!.appnedLogMessage(">>PlayRTC 채널이 종료되었습니다....")
         }
         statReportHandler!!.stop()
@@ -778,7 +778,7 @@ class PlayRTCHandler(activity: PlayRTCActivity) : PlayRTCObserver() {
             notiMsg = "[$peerUid]님이 채널에서 퇴장하였습니다...."
         }
 
-        Utils.showToast(activity, notiMsg)
+        Utils.showToast(activity!!, notiMsg)
         activity!!.appnedLogMessage(notiMsg)
         statReportHandler!!.stop()
 
@@ -808,7 +808,7 @@ class PlayRTCHandler(activity: PlayRTCActivity) : PlayRTCObserver() {
         // 연결 수립 이후 네트워크 상태에 따라 연결 상태가 PeerDisconnected <-> PeerConnected 상태를 반복할 수 있다.
         if (status == PlayRTCStatus.PeerSuccess) {
             //P2P 상태 리포트 구동 시작
-            statReportHandler!!.start(obj, peerId)
+            statReportHandler!!.start(obj, peerId!!)
         }
     }
 
@@ -822,7 +822,7 @@ class PlayRTCHandler(activity: PlayRTCActivity) : PlayRTCObserver() {
     override fun onError(obj: PlayRTC?, status: PlayRTCStatus?, code: PlayRTCCode?, desc: String?) {
         val msg = "Error[$code] Status[$status] $desc"
 
-        Utils.showToast(activity, msg)
+        Utils.showToast(activity!!, msg)
         activity!!.appnedLogMessage(">>$peerId  $msg")
 
         //P2P 상태 리포트 구동 중지

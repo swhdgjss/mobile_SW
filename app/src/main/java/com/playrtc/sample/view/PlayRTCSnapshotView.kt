@@ -1,5 +1,6 @@
 package com.playrtc.sample.view
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Color
@@ -62,7 +63,8 @@ class PlayRTCSnapshotView : RelativeLayout {
         this.layoutParams = param
     }
 
-    /**
+    @SuppressLint("ResourceType")
+            /**
      * Snapshot 버튼과 이미지 배치등의 자식 요소를 동적으로 생성하여 Lauout 구성
      * @param observer SnapshotLayerObserver
      */
