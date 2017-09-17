@@ -100,29 +100,29 @@ class MainActivity : Activity() {
 
 
         // 영상 + 음성 + Data Sample
-        this.findViewById(R.id.btn_go_sample1).setOnClickListener(object : Button.OnClickListener {
-            override fun onClick(v: View) {
+        this.findViewById(R.id.btn_go_sample1).setOnClickListener {
+            fun onClick(v: View) {
                 excutePlayRTCSample(1)
             }
-        })
+        }
         // 영상 + 음성 Sample
-        this.findViewById(R.id.btn_go_sample2).setOnClickListener(object : Button.OnClickListener {
-            override fun onClick(v: View) {
+        this.findViewById(R.id.btn_go_sample2).setOnClickListener {
+            fun onClick(v: View) {
                 excutePlayRTCSample(2)
             }
-        })
+        }
         // 음성 only Sample
-        this.findViewById(R.id.btn_go_sample3).setOnClickListener(object : Button.OnClickListener {
-            override fun onClick(v: View) {
+        this.findViewById(R.id.btn_go_sample3).setOnClickListener {
+            fun onClick(v: View) {
                 excutePlayRTCSample(3)
             }
-        })
+        }
         //  Data  only Sample
-        this.findViewById(R.id.btn_go_sample4).setOnClickListener(object : Button.OnClickListener {
-            override fun onClick(v: View) {
+        this.findViewById(R.id.btn_go_sample4).setOnClickListener {
+            fun onClick(v: View) {
                 excutePlayRTCSample(4)
             }
-        })
+        }
 
         (findViewById(R.id.radio_ring_group) as RadioGroup).setOnCheckedChangeListener { group, checkedId ->
             if (checkedId == R.id.radio_ring_false) {
